@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 10f;
     private Vector3 movement;
     private Rigidbody rb;
+    [SerializeField] private Transform cameraFacing;
     public float rotationSpeed = 5.0f;
     public string cameraRotateAxis;
 

@@ -1,20 +1,20 @@
 using UnityEngine;
-using Unity.UI;
 using TMPro;
-using System;
 
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
     public static ScoreManager instance;
-    public int score;
+    public static int score;
     public int highScore;
-
+    private EnemyManager enemyManager;
     void Start()
     {
         instance = this;
         score = 0;
+        LoadGameScore();
+        highScoreText.text = "High Score: " + highScore.ToString();
     }
 
     void Update()
@@ -22,8 +22,33 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-    public void AddScore(int scoreValue)
+    private void LoadGameScore()
     {
-        score += scoreValue;
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            highScore = PlayerPrefs.GetInt("HighScore");
+            highScoreText.text = "High Score: " + highScore;
+        }
+        else
+        {
+            highScore = 0;
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
+    }
+
+    private void SaveGameScore()
+    {
+        PlayerPrefs.SetInt("HighScore", highScore);
+    }
+
+    public void CurrentScore()
+    {
+        scoreText.text = "Score: " + score;
+        if (score > highScore)
+        {
+            highScore = score;
+            highScoreText.text = "High Score: " + highScore;
+            SaveGameScore();
+        }
     }
 }

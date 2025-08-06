@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int score;
+    public int scoreValue;
     public int maxHealth;
     private int currentHealth;
-    private ScoreManager scoreManager;
 
     void Awake()
     {
@@ -17,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            ScoreManager.score += scoreValue;
+            ScoreManager.instance.CurrentScore();
         }
     }
 
