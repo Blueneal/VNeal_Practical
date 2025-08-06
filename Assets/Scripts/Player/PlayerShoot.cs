@@ -5,7 +5,7 @@ public class PlayerShoot : MonoBehaviour
     public Transform barrel;
     public GameObject projectile;
     public float timer;
-    public float cooldown = 0.1f;
+    public float cooldown = 0.5f;
 
     void Update()
     {
