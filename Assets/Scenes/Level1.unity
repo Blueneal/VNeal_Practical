@@ -1498,6 +1498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2456977cefcc4cf459bf3275d4d876ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationSpeed: 50
+  cameraRotateAxis: Mouse X
 --- !u!136 &338548487
 CapsuleCollider:
   m_ObjectHideFlags: 0
