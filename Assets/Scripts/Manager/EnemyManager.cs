@@ -55,7 +55,7 @@ public class EnemyManager : MonoBehaviour
 
     public void Update()
     {
-        if (ScoreManager.score >= 50 && noBoss)
+        if (ScoreManager.score >= 300 && noBoss)
         {
             foreach (GameObject enemy in enemiesSpawned)
             {

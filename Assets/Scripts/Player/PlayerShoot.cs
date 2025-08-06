@@ -21,7 +21,7 @@ public class PlayerShoot : MonoBehaviour
         if (timer > cooldown)
         {
             timer = 0;
-            Instantiate(projectile, barrel.position, projectile.transform.rotation);
+            Instantiate(projectile, barrel.position, barrel.rotation);
         }
     }
 }

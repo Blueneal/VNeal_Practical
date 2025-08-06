@@ -1648,7 +1648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrel: {fileID: 778742023}
-  projectile: {fileID: 3873709018967392098, guid: 79b161908bfdd654495441fd4ed6e895, type: 3}
+  projectile: {fileID: 164090654174501784, guid: 25896f13da021e341b079a7472b321ae, type: 3}
   timer: 0
   cooldown: 0.5
 --- !u!1 &376437402
@@ -4981,6 +4981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55df7666e92e6f244bedc80b0f489366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemiesSpawned: []
   playerHealth: {fileID: 338548492}
   cube: {fileID: 624443418881386880, guid: 0e494a153d33a27429e49ac65f8e0e48, type: 3}
   sphere: {fileID: 2498739679146086774, guid: 8e8b6a88ea715fe4bb4032986e8c8b1d, type: 3}

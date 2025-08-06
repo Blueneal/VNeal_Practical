@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private void Move(float horizontalInput, float verticalInput)
     {
         movement.Set(horizontalInput, 0f, verticalInput);
-        movement = movement.normalized * speed * Time.deltaTime;
+        movement = transform.TransformDirection (movement.normalized) * speed * Time.deltaTime;
         rb.MovePosition(transform.position + movement);
     }
 
