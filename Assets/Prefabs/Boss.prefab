@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 1796628362341397637}
   - component: {fileID: 6713884627869891523}
   - component: {fileID: 1247256116538936812}
-  - component: {fileID: 809744153401964372}
   - component: {fileID: 466359830603720965}
+  - component: {fileID: 1316718822813681997}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -177,20 +177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
---- !u!114 &809744153401964372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4405276181786038567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b2483571117c8438e0e1d5a614ad9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreValue: 200
-  maxHealth: 60
 --- !u!114 &466359830603720965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,3 +189,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a42417791b0cf243be41c063545057c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1316718822813681997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4405276181786038567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb052e034a18b6d4a9305bd99dd0d55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
+  maxHealth: 60
